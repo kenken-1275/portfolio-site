@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- 記載番号：2 -->
+    <title>small-cafe app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="p-work">
+    <header id="header" class="header">
+      <div class="header__logo">
+          <h1>
+            <a href="../">
+              <!-- 記載番号：1 -->
+              <span class="header__logo-title">Tsuda Kenta</span>
+              <span class="header__logo-sub">Portfolio</span>
+            </a>
+          </h1>
+        </div>
+        <div class="header__hamburger">
+          <i></i>
+        </div>
+        <nav class="header__gnav">
+          <ul class="header__gnav-list">
+            <li class="header__gnav-item"><a href="../#a-profile">PROFILE</a></li>
+            <li class="header__gnav-item"><a href="../#a-skill">SKILL</a></li>
+            <li class="header__gnav-item"><a href="../#a-works">WORKS</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <section class="p-work-firstview">
+        <div class="section-inner">
+          <!-- 記載番号：2（記載番号2は5行目にもあるので気をつけてください） -->
+          <h2>small-cafe app</h2>
+          <div class="p-work-firstview__pict obj-fit-img">
+            <!-- images/02に配置した、オリジナルアプリの画像（PC版）のパスを記載する -->
+            <img src="../images/work/02/pict-smallcafe-top.png" class="show-pc">
+            <!-- images/02に配置した、オリジナルアプリの画像（SP版）のパスを記載する -->
+            <img src="../images/work/02/pict-smallcafe-top.png" class="show-sp">
+          </div>
+          <div class="p-work-firstview__text-area">
+            <h3 class="p-work-firstview__text-titile">開発環境</h3>
+            <!-- 記載番号：3 -->
+            <p class="p-work-firstview__text">Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code </p>
+            <!-- 記載番号：4 -->
+            <p class="p-work-firstview__text-link"><a href="https://github.com/kenken-1275/small-cafe" target="_blank">https://github.com/kenken-1275/small-cafe</a></p>
+          </div>
+        </div>
+      </section>
+      <section class="p-work-summary">
+        <div class="section-inner">
+          <ul class="p-work-summary__list">
+            <li class="p-work-summary__item">
+              <h3>概要</h3>
+              <table class="p-work-summary__item-table">
+                <tr>
+                  <th>制作時間</th>
+                  <!-- 記載番号：5 -->
+                  <td>150時間</td>
+                </tr>
+                <tr>
+                  <th>URL</th>
+                  <!-- 記載番号：6 -->
+                  <td><a href="https://small-cafe.herokuapp.com/" target="_blank">https://small-cafe.herokuapp.com/</a></td>
+                </tr>
+                <tr>
+                  <th>ID</th>
+                  <!-- 記載番号：7 -->
+                  <td>kenken</td>
+                </tr>
+                <tr>
+                  <th>PASS</th>
+                  <!-- 記載番号：8 -->
+                  <td>1275</td>
+                </tr>
+              </table>
+            </li>
+            <li class="p-work-summary__item">
+              <h3>動作テスト</h3>
+              <h4>テスト用アカウント</h4>
+              <table class="p-work-summary__item-table">
+                <tr>
+                  <th>一般ユーザーmail</th>
+                  <!-- 記載番号：9 -->
+                  <td>sample@sample</td>
+                </tr>
+                <tr>
+                  <th>一般ユーザーPASS</th>
+                  <!-- 記載番号：10 -->
+                  <td>1sample</td>
+                </tr>
+                <tr>
+                  <th>管理者mail</th>
+                  <!-- 記載番号：9 -->
+                  <td>admin@smallcafe</td>
+                </tr>
+                <tr>
+                  <th>管理者PASS</th>
+                  <!-- 記載番号：10 -->
+                  <td>admin0711</td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="p-work-outline">
+        <div class="section-inner">
+          <div class="heading">
+            <h2>OUTLINE<span>アプリケーションの概要</span></h2>
+          </div>
+          <div class="contents">
+            <!-- 記載番号：11 -->
+            <div class="p-work-outline__text">
+              <p>
+                オリジナルアプリケーションとして、実家で経営しているカフェのHP兼予約システムを作成しました。
+                <br>
+                主な機能は、HP機能、ユーザー登録機能、予約機能、管理者機能（お知らせ・予約機能）です。
+              </p>
+              <p>
+                トップページでは、各種メニューとお知らせ、コンセプトが表示されます。「店舗紹介」ボタンからは店舗の詳細情報ページ、「メニュー」ボタンからはメニューページへ遷移できます。
+              </p>
+              <p>
+                トップページから新規ユーザー登録を行なっていただくと、予約機能が使えます。ヘッダーの「予約する」ボタンを押すと現在のユーザーの予約状況確認ページへ進み、「新規予約する」ボタンを押すと新規予約ページへ遷移します。必要事項を入力し、「予約確認画面へ」ボタンを押すと予約確認画面へ遷移し入力した内容を表示させ確認を促します。「予約確定」ボタンを押すと予約され、最初の予約状況確認ページへ戻り、予約した内容が表示されます。予約した後は、予約のキャンセルも可能です。
+              </p>
+              <p>
+                トップページから、管理者権限を持つアカウントでログインすると、管理者機能としてお知らせ機能や予約機能、過去の予約一覧確認機能が使えます。ヘッダーの「お知らせ一覧」ボタンを押すと投稿したお知らせ一覧表示ページに遷移し、ここからお知らせ新規登録も行うことができます。投稿したお知らせは、編集・削除することも可能です。
+              </p>
+              <p>
+                管理者の予約機能としては、ヘッダーの「予約一覧」ボタンを押すことで現在入っている予約一覧確認画面へ遷移し、予約IDを押すことで各予約の詳細情報確認ページへ遷移できます。詳細確認ページでは、各予約のキャンセルも可能です。また、予約一覧確認画面から「新規予約する」ボタンを押すと新規予約ページへ、「過去の予約一覧」ボタンを押すと過去の予約一覧確認ページへの遷移もできます。一般のユーザーは1アカウントにつき1予約しか出来ないようにしておりますが、管理者は何件でも予約可能です。過去の予約一覧確認ページでは、検索フォームを設けており、キーワードもしくは日付（両方でも可）で絞り込むことができます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-work-about">
+        <div class="section-inner">
+          <ul class="p-work-about__list">
+            <li class="p-work-about__item">
+              <h3>開発に至った経緯</h3>
+              <!-- 記載番号：12 -->
+              <div class="p-work-about__item-block">
+                <p>
+                  実家で経営している「小さな喫茶店」という、リビングを改装して営業しているカフェがあります。母が趣味で始めた、名前の通り小さな喫茶店です。
+                </p>
+                <p>
+                  現在お店のHPが存在しておらず、また予約も母が手作業でメモを取るなどして行なっているため、より集客を図り、母の予約に対する負担軽減を目指したいと考え作成するに至りました。
+                </p>
+              </div>
+            </li>
+            <li class="p-work-about__item">
+              <h3>開発で工夫したこと</h3>
+              <div class="p-work-about__item-block p-work-about__item-block-2column">
+                <div class="p-work-about__item-block-pict obj-fit-img">
+                  <!-- images/02に配置した、記載内容を表す画像のパスを記載する -->
+                  <img src="../images/work/02/pict-smallcafe-reservation1.png" class="reservation-pict">
+                  <img src="../images/work/02/pict-smallcafe-reservation2.png">
+                </div>
+                <!-- 記載番号：13 -->
+                <div class="p-work-about__item-block-text">
+                  <p>
+                    1つは、新規予約ページで、営業曜日のみ現在の予約状況をカレンダーで表示したことです。gemのsimple_calendarを利用し、編集することで実現しました。<br>
+                    ユーザーがこれを見れば、空いている箇所が一目で分かるので便利になると考え実装しました。
+                  </p>
+                  <p>
+                    2つ目は、予約状況に合わせて、予約時間と予約人数の選択肢の表示を変化させたことです。<br>
+                    そもそも予約のシステムとして、11:00~16:00までの各1時間毎に3人まで予約が出来る状態にしました。これは、小さな喫茶店なので予約人数が多くなり過ぎてしまうとかえって問題になってしまうと判断したからです。<br>
+                    その中で、例えばある日にちの11:00に既に3人の予約が入っていた場合、新規予約ページの時間帯を選択する欄には11:00という選択肢を表示させないようにしました。またもし2人の予約が入っていた場合は、時間の選択肢は表示されますが、人数の選択肢が1人のみになる、という工夫をしました。<br>
+                    こうすることで、ユーザーが誤った予約をしないよう制御する事が出来ると考え実装しました。
+                  </p>
+                  <p>
+                    3つ目は、予約が過去の日付になった時点で、自動で過去の予約一覧にアーカイブされる仕組みにしたことです。<br>
+                    時が経てば経つほど、予約は積み重なっていきます。予約一覧表示ページに全予約を表示したままでは可読性も操作性も悪いと考え、過去の予約として保存し直すシステムにすることにしました。<br>
+                    ただ、全てを手作業で移すのは手間がかかり逆に負担が増えてしまうため、cronを使用し毎日AM1:00に前日分の予約を全て別テーブルに移す作業を自動で行えるように実装しました。
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="p-work-about__item">
+              <h3>今後実装したいと思っていること</h3>
+              <div class="p-work-about__item-block p-work-about__item-block-2column">
+                <div class="p-work-about__item-block-pict obj-fit-img">
+                  <!-- images/02に配置した、記載内容を表す画像のパスを記載する -->
+                  <img src="../images/work/02/pict-smallcafe-announce.png">
+                </div>
+                <!-- 記載番号：14 -->
+                <div class="p-work-about__item-block-text">
+                  <p>
+                    ・管理者が休業日を設定した場合、新規予約画面でその日の選択は出来ないようにすることです。現状では、お知らせで休業日を知らせることは出来ても、選択は出来てしまうので、管理者のページに休業日設定ページを作成し、設定した日付と連動して新規予約ページのカレンダーで選択出来ないように実装したいと考えております。
+                  </p>
+                  <p>
+                    ・ビューの充実化を図りたいと考えております。HPも兼ねていますが、現状では内容が薄いため、トップページにコンセプトを追加したり、メニューページに実際のメニューの写真を載せて説明文を記載することで充実化を図りたいと考えております。
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="p-work-others">
+        <div class="section-inner">
+          <div class="heading">
+            <h2>OTHERS<span>その他実績</span></h2>
+          </div>
+          <div class="contents">
+            <ul class="p-work-others__list">
+              <li class="p-work-others__item">
+                <div class="p-work-others__item-pict">
+                  <!-- images/01に配置した、FURIMAの画像（PC版）のパスを記載する -->
+                  <a href="01.html" style="background-image:url('../images/work/01/pict-furima-top.jpeg');"></a>
+                </div>
+                <div class="p-work-others__item-text-block">
+                  <!-- 記載番号：15 -->
+                  <h3>FURIMA（フリマアプリ）</h3>
+                  <!-- 記載番号：16 -->
+                  <p>Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code </p>
+                </div>
+                <div class="p-work-others__item-btn-block">
+                  <a href="01.html" class="button">More</a>
+                </div>
+              </li>
+              <li class="p-work-others__item">
+                <div class="p-work-others__item-pict">
+                  <!-- images/02に配置した、オリジナルアプリの画像（PC版）のパスを記載する -->
+                  <a href="02.html" style="background-image:url('../images/work/02/pict-smallcafe-top.png');"></a>
+                </div>
+                <div class="p-work-others__item-text-block">
+                  <!-- 記載番号：17 -->
+                  <h3>small-cafe app</h3>
+                  <!-- 記載番号：18 -->
+                  <p>Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code </p>
+                </div>
+                <div class="p-work-others__item-btn-block">
+                  <a href="02.html" class="button">More</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- 記載番号：1 -->
+    <footer id="footer" class="footer"><p>&copy; Tsuda Kenta</p></footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/ofi.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>
